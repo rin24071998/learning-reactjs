@@ -2,6 +2,7 @@ import {
   Navigate,
   useRoutes,
 } from 'react-router-dom';
+import { pageName } from '../constants/constant';
 import AdminPage from '../pages/Admin.page';
 import DashboardPage from '../pages/Dashboard.page';
 
@@ -9,26 +10,25 @@ interface IPrivateRoute {
   authed?: boolean;
 }
 function PrivateRoute({ authed }: IPrivateRoute) {
-  const element = useRoutes([
+  const routes = useRoutes([
     {
-      path: "/",
-      element: authed ? <AdminPage /> : <Navigate to="/login" replace />,
+      path: pageName.ROOT,
+      element: authed ? <AdminPage /> : <Navigate to={pageName.LOGIN} replace />,
       children: [
         {
          index: true,
          element: <DashboardPage />
         },
         {
-          path: "dashboard",
+          path: pageName.DASHBOARD,
           element: <DashboardPage />,
         },
-        { path: "dashboard1", element: <DashboardPage /> },
       ],
     },
   ]);
   return (
    <>
-    {element}
+    {routes}
     </>
   );
 }
