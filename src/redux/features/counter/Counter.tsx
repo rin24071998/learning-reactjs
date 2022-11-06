@@ -62,6 +62,7 @@ export function Counter() {
         >
           Add If Odd
         </button>
+        <div>Please refresh pages</div>
       </div>
     </div>
   );
