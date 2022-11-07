@@ -1,4 +1,4 @@
-const image1 = "image1";
+const image1 = 'image1';
 export const image = {
-    image1
-}
+  image1,
+};

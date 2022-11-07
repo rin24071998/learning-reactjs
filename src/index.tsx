@@ -9,6 +9,8 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './_i18n/i18n';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
+import 'antd/dist/antd.min.css';
+
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 const persistor = persistStore(store);

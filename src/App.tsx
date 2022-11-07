@@ -7,10 +7,9 @@ import { Counter } from './redux/features/counter/Counter';
 function App() {
   return (
     <>
-      <Counter />
       <BrowserRouter>
-        <PublicRoute authed={true} />
-        <PrivateRoute authed={true} />
+        <PublicRoute authed={false} />
+        <PrivateRoute authed={false} />
       </BrowserRouter>
     </>
   );

@@ -1,5 +1,5 @@
-import Home from './home.json'
+import Home from './home.json';
 const jp = {
-    ...Home
-}
-export default jp
+  ...Home,
+};
+export default jp;

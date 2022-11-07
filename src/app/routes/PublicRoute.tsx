@@ -5,10 +5,15 @@ import Loginpage from '../pages/Login.page';
 interface IPublicRoute {
   authed?: boolean;
 }
-export default function PuiblicRoute({authed}: IPublicRoute) {
+export default function PuiblicRoute({ authed }: IPublicRoute) {
   return (
     <Routes>
-      <Route path={pageName.LOGIN} element={!authed ? <Loginpage /> : <Navigate to={pageName.DASHBOARD} replace/>} />
+      <Route
+        path={pageName.LOGIN}
+        element={
+          !authed ? <Loginpage /> : <Navigate to={pageName.DASHBOARD} replace />
+        }
+      />
     </Routes>
   );
 }

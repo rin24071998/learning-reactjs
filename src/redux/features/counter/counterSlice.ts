@@ -23,7 +23,7 @@ export const incrementAsync = createAsyncThunk(
   async (amount: number) => {
     const response = await UsersApi.getUsersList({});
     // The value we return becomes the `fulfilled` action payload
-    console.log(response?.data)
+    console.log(response?.data);
     return 10;
   }
 );

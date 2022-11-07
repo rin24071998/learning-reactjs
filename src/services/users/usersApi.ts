@@ -1,11 +1,10 @@
-import instance from "../axios.config"
-
+import instance from '../axios.config';
 
 class UsersApis {
   getUsersList = (request: any) =>
     instance.get('/users', {
-      params: request
-    })
+      params: request,
+    });
 }
 
-export const UsersApi = new UsersApis()
+export const UsersApi = new UsersApis();
