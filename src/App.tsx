@@ -9,8 +9,8 @@ function App() {
     <>
       <Counter />
       <BrowserRouter>
-        <PublicRoute authed={false} />
-        <PrivateRoute authed={false} />
+        <PublicRoute authed={true} />
+        <PrivateRoute authed={true} />
       </BrowserRouter>
     </>
   );
