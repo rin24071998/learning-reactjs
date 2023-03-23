@@ -1,13 +1,11 @@
+import { rulesLogin } from '@Helper/validation/login';
+import ButtonComponent from '@Share/button/ButtonComponent';
+import FormComponent from '@Share/form/FormComponent';
+import FormItem from '@Share/formItem/FormItem';
 import { Form } from 'antd';
-import React from 'react';
-import { rulesLogin } from '../../helper/validation/login';
-import ButtonComponent from '../../share/button/ButtonComponent';
-import FormComponent from '../../share/form/FormComponent';
-import FormItem from '../../share/formItem/FormItem';
 
 export default function LoginComponent() {
   const [form] = Form.useForm();
-  console.log(form);
   const onFinish = (values: any) => {
     console.log(values);
   };

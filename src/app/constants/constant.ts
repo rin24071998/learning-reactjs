@@ -1,4 +1,4 @@
-import { IPage } from '../interfaces/interfaces/route';
+import { IPage } from '@Interfaces/interfaces/route';
 
 const pages: IPage[] = [
   {

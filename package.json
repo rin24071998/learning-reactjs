@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://rin2407.github.io/react-redux-toolkit/",
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -29,10 +30,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
     "format": "yarn prettier --write .",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
@@ -56,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "craco-alias": "^3.0.1",
     "prettier": "2.7.1"
   }
 }

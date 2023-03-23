@@ -1,7 +1,7 @@
+import { pageName } from '@Constants/constant';
+import AdminPage from '@Pages/Admin.page';
+import DashboardPage from '@Pages/Dashboard.page';
 import { Navigate, useRoutes } from 'react-router-dom';
-import { pageName } from '../constants/constant';
-import AdminPage from '../pages/Admin.page';
-import DashboardPage from '../pages/Dashboard.page';
 
 interface IPrivateRoute {
   authed?: boolean;
