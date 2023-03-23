@@ -5,10 +5,16 @@ import AppForm from '@Share/AppForm/AppForm';
 import AppFormItem from '@Share/AppFormItem/AppFormItem';
 import { Form } from 'antd';
 import classes from './Login.module.scss';
+import { useNavigate } from 'react-router-dom';
+import { authend } from '@/redux/features/user/userSlice';
+import { useAppDispatch } from '@/redux/hooks';
 export default function Login() {
   const [form] = Form.useForm();
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const onFinish = (values: any) => {
-    console.log(values);
+    dispatch(authend());
+    navigate('/dashboard');
   };
   return (
     <div className={classes.login}>

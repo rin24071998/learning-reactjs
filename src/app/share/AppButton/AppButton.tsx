@@ -1,7 +1,6 @@
 import { Button } from 'antd';
 import { CSSProperties } from 'react';
-import clsx from 'clsx';
-import classes from './AppButton.module.scss';
+
 interface AppButtonProps {
   type?:
     | 'default'
@@ -28,7 +27,6 @@ interface AppButtonProps {
 }
 const AppButton = (props: AppButtonProps) => {
   const {
-    className,
     type,
     htmlType,
     name,
@@ -45,7 +43,6 @@ const AppButton = (props: AppButtonProps) => {
       htmlType={htmlType || 'button'}
       onClick={onClick}
       block={block || true}
-      className={clsx(classes.appButton, className)}
       style={style}
       loading={loading}
       disabled={disabled}

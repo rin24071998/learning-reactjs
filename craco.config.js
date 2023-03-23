@@ -15,6 +15,7 @@ module.exports = {
           '@Interfaces': './app/interfaces',
           '@Pages': './app/pages',
           '@Routes': './app/routes',
+          '@': './',
         },
       },
     },

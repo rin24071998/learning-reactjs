@@ -1,0 +1,12 @@
+.appFormItem {
+  :global {
+    .ant-form-item {
+      margin: 0 0 20px;
+      .ant-form-item-control-input {
+        input {
+          min-height: 35px;
+        }
+      }
+    }
+  }
+}

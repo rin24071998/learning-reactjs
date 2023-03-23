@@ -8,6 +8,6 @@ export const pages: IPage[] = [
 ];
 export const pageName = {
   ROOT: '/',
-  LOGIN: 'login',
-  DASHBOARD: 'dashboard',
+  LOGIN: '/login',
+  DASHBOARD: '/dashboard',
 };

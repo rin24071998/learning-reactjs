@@ -11,16 +11,19 @@ import {
   REGISTER,
   REHYDRATE,
 } from 'redux-persist';
+import userReducer from './features/user/userSlice';
 
 const reducers = combineReducers({
   counter: counterReducer,
+  user: userReducer,
 });
 
 const persistConfig = {
   key: 'root',
+  version: 1,
   storage,
   whiteList: ['counter'],
-  blacklist: [],
+  blacklist: ['user'],
 };
 const persistedReducer = persistReducer(persistConfig, reducers);
 

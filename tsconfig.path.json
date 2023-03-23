@@ -8,7 +8,8 @@
       "@Constants/*": ["./app/constants/*"],
       "@Interfaces/*": ["./app/interfaces/*"],
       "@Pages/*": ["./app/pages/*"],
-      "@Routes/*": ["./app/routes/*"]
+      "@Routes/*": ["./app/routes/*"],
+      "@/*": ["./*"]
     }
   }
 }

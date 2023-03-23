@@ -9,6 +9,7 @@ interface AppFormProps {
   layout?: 'horizontal' | 'inline' | 'vertical';
   onFieldsChange?: (changedFields: FieldData[], allFields: FieldData[]) => void;
   rest?: any;
+  className?: string;
 }
 
 const AppForm = (props: AppFormProps) => {
@@ -21,6 +22,7 @@ const AppForm = (props: AppFormProps) => {
     layout,
     onFieldsChange,
     rest,
+    className,
   } = props;
   return (
     <Form
@@ -32,6 +34,7 @@ const AppForm = (props: AppFormProps) => {
       form={form}
       layout={layout || 'vertical'}
       onFieldsChange={onFieldsChange}
+      className={className}
     >
       {children}
     </Form>
