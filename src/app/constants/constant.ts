@@ -1,14 +1,8 @@
-import { IPage } from '@Interfaces/interfaces/route';
+import { field } from './field';
+import { pageName, pages } from './page';
 
-const pages: IPage[] = [
-  {
-    path: 'dashboard',
-    name: 'Dashboard',
-  },
-];
-const pageName = {
-  ROOT: '/',
-  LOGIN: 'login',
-  DASHBOARD: 'dashboard',
+export const CONSTANTS = {
+  field,
+  pages,
+  pageName,
 };
-export { pages, pageName };

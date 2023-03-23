@@ -1,4 +1,4 @@
-import LoginComponent from '@Component/Login/LoginComponent';
+import Login from '@Component/Login/Login';
 import { Form } from 'antd';
 
 export default function Loginpage() {
@@ -7,5 +7,5 @@ export default function Loginpage() {
   const onFinish = (values: any) => {
     console.log(values);
   };
-  return <LoginComponent />;
+  return <Login />;
 }

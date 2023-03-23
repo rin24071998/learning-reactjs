@@ -1,9 +1,7 @@
-import React from 'react';
-import './App.css';
 import PrivateRoute from './app/routes/PrivateRoute';
 import { BrowserRouter } from 'react-router-dom';
 import PublicRoute from './app/routes/PublicRoute';
-import { Counter } from './redux/features/counter/Counter';
+import './App.css';
 function App() {
   return (
     <>

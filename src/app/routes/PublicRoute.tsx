@@ -1,4 +1,4 @@
-import { pageName } from '@Constants/constant';
+import { CONSTANTS } from '@Constants/constant';
 import Loginpage from '@Pages/Login.page';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
@@ -9,9 +9,13 @@ export default function PuiblicRoute({ authed }: IPublicRoute) {
   return (
     <Routes>
       <Route
-        path={pageName.LOGIN}
+        path={CONSTANTS.pageName.LOGIN}
         element={
-          !authed ? <Loginpage /> : <Navigate to={pageName.DASHBOARD} replace />
+          !authed ? (
+            <Loginpage />
+          ) : (
+            <Navigate to={CONSTANTS.pageName.DASHBOARD} replace />
+          )
         }
       />
     </Routes>
